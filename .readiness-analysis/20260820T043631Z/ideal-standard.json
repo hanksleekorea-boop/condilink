@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "ideal-standard/v1",
+  "referenceCategory": "Thailand rental-property discovery and inquiry preparation",
+  "standards": [
+    {"id": "DISCOVERY", "standard": "Search by area, property type, budget, bedroom, and verified availability date.", "currentEvidence": "candidate filters and verification date fields exist", "gap": "no verified live-inventory contract"},
+    {"id": "LISTING_PROVENANCE", "standard": "Every listing shows source, owner/agent identity, authorization, freshness, and correction path.", "currentEvidence": "source and checked-at fields appear in local state", "gap": "no independently verified publisher or provenance workflow"},
+    {"id": "COMPARISON", "standard": "Side-by-side normalized price, fees, term, amenities, transport, and evidence differences.", "currentEvidence": "comparison controls and numeric contract/ad comparison are implemented", "gap": "no structured external data normalization evidence"},
+    {"id": "INQUIRY", "standard": "Language-aware inquiry draft with informed-consent and contact safety guidance.", "currentEvidence": "Korean/English/Thai inquiry generation plus safety messages", "gap": "no verified delivery, tracking, or support escalation"},
+    {"id": "TRANSACTION_BOUNDARY", "standard": "If transactions are offered, use identity checks, secure messaging, payment, contract disclosure, cancellation, and dispute procedures.", "currentEvidence": "app warns that inquiry is not a booking or payment", "gap": "not a transaction service; boundaries must remain conspicuous"},
+    {"id": "PRIVACY", "standard": "Local-data explanation, export/delete controls, retention scope, and policy contact.", "currentEvidence": "local storage and non-upload messaging in source", "gap": "production policy and deletion/support verification not established"},
+    {"id": "MOBILE", "standard": "Responsive public entry point, install/offline behavior, and physical-device regression evidence.", "currentEvidence": "manifest and install-related code exist", "gap": "separate /m/ endpoint returns 404; no current Android-device evidence"},
+    {"id": "OPERATIONS", "standard": "Monitoring, incident contact, listing corrections, uptime ownership, and release traceability.", "currentEvidence": "many local test scripts and continuity records", "gap": "no current operational evidence in this analysis"}
+  ],
+  "priorityOrder": ["MOBILE", "LISTING_PROVENANCE", "TRANSACTION_BOUNDARY", "PRIVACY", "OPERATIONS"]
+}

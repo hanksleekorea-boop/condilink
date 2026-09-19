@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "service-profile/v1",
+  "analysisScope": "current-open-project-only",
+  "observedAtUtc": "2026-08-20T04:36:31Z",
+  "service": {
+    "name": "CondoLink",
+    "category": "Thailand rental-property decision support",
+    "primaryUsers": ["Thailand condo renters", "Korean-speaking renters", "users preparing viewing and inquiry checks"],
+    "valueProposition": "Compare candidates, record verification evidence on the device, and generate Korean/English/Thai inquiry drafts without claiming to complete a booking, payment, or contract."
+  },
+  "observedCapabilities": [
+    {"capability": "candidate search and comparison", "evidence": "20_SRC/full/app.js: state, candidate rendering, comparison controls"},
+    {"capability": "rental-cost and stay-condition checklist", "evidence": "20_SRC/full/app.js: stayCosts, stayConditions, generateInquiry"},
+    {"capability": "trilingual inquiry draft", "evidence": "20_SRC/full/app.js: generateInquiry creates ko/en/th text"},
+    {"capability": "device-local persistence", "evidence": "20_SRC/full/app.js: persist/restore use localStorage; IndexedDB markers are present in source"},
+    {"capability": "PWA-related assets", "evidence": "20_SRC/full/manifest.webmanifest; beforeinstallprompt marker in source"},
+    {"capability": "safety prompts for room-sharing and deposits", "evidence": "20_SRC/full/app.js: safeSharingProfile and sharingRiskMessage"}
+  ],
+  "explicitlyNotVerified": [
+    "live listing inventory freshness or broker authorization",
+    "account, booking, payment, contract, refund, or customer-support operations",
+    "production analytics, error monitoring, and legal review",
+    "actual-device Android behavior"
+  ],
+  "publicEndpointsChecked": [
+    {"url": "https://hanksleekorea-boop.github.io/condolink/", "httpStatus": 200},
+    {"url": "https://hanksleekorea-boop.github.io/condolink/dashboard.html", "httpStatus": 200},
+    {"url": "https://hanksleekorea-boop.github.io/condolink/m/", "httpStatus": 404, "interpretation": "A separate mobile path is unavailable; this does not by itself prove the main page is not responsive."}
+  ],
+  "confidence": "medium",
+  "limitations": "Source and continuity records contain historical release references. This profile records directly observed code and read-only HTTP responses, not a claim of current operational readiness."
+}

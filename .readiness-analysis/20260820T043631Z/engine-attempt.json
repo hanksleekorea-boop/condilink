@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "analysis-engine-attempt/v1",
+  "status": "NOT_RUN",
+  "checkedAtUtc": "2026-08-20T04:36:31Z",
+  "localSearch": "No local readiness-engine, lens, or sample result file matching the requested engine was found in the current project.",
+  "externalEngineExecution": "NOT_RUN",
+  "reason": "This is an analysis-only task. No unreviewed remote executable was introduced or run. Direct source evidence and official comparator pages were used instead.",
+  "consequence": "project-evidence.json and readiness-analysis.{json,md} were intentionally not produced because the required engine did not complete."
+}

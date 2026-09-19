@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "project": "콘도링크",
+    "timestamp": "2026-09-19T15:04:21.063Z",
+    "version": "v3.3"
+  },
+  "engine_A": {
+    "domain_match": [
+      "CondoLink",
+      "SaaS",
+      "Aggregator"
+    ],
+    "target_audience": "Global Users, Professionals",
+    "key_features": [
+      "가상 투어",
+      "관리비 내역",
+      "전자 계약"
+    ],
+    "market_size_estimate": "$10B+",
+    "core_problem_solved": "프리미엄 콘도미니엄 매매 및 임대 네트워크."
+  }
+}

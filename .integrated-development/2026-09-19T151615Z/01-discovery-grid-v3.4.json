@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "project": "콘도링크",
+    "timestamp": "2026-09-19T15:16:15.121Z",
+    "version": "v3.4"
+  },
+  "engine_A_general": {
+    "domain_match": [
+      "CondoLink",
+      "SaaS",
+      "Aggregator"
+    ],
+    "target_audience": "Global Users, Professionals",
+    "key_features": [
+      "가상 투어",
+      "관리비 내역",
+      "전자 계약"
+    ]
+  },
+  "engine_B_commercial": {
+    "auth": "Google Login, GitHub OAuth, Email/PW",
+    "pwa": "Manifest, Service Worker, Offline Support",
+    "premium": "Freemium Tier setup"
+  },
+  "engine_C_collaboration": {
+    "shared_storage": "Cloud Sync, Local First",
+    "concurrent_editing": "CRDT, WebSocket sync",
+    "conflict_resolution": "Last-write-wins + manual merge"
+  }
+}

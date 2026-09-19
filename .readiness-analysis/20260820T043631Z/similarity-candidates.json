@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "similarity-candidates/v1",
+  "catalogVersion": "embedded-500-v1",
+  "embeddedCatalogTotal": 500,
+  "selectionMethod": "feature, user journey, transaction boundary, and market comparison",
+  "primaryCandidate": {
+    "catalogNumber": 121,
+    "labelKo": "부동산 검색",
+    "labelEn": "property search",
+    "similarity": 0.9,
+    "why": ["rental candidates are searched and compared", "property conditions and availability are recorded", "the primary journey is discovery-to-inquiry rather than post-contract management"]
+  },
+  "secondaryCandidates": [
+    {
+      "catalogNumber": 122,
+      "labelKo": "임대 관리",
+      "labelEn": "property management",
+      "similarity": 0.58,
+      "why": ["viewing, move-in, condition and verification checklists are present", "there is no verified landlord, tenant, maintenance, rent-collection, or lease-management workflow"]
+    },
+    {
+      "catalogNumber": 123,
+      "labelKo": "단기 숙박",
+      "labelEn": "vacation rental",
+      "similarity": 0.42,
+      "why": ["stay duration and nightly/weekly/monthly cost inputs exist", "the product explicitly generates an inquiry only and has no verified reservation or payment flow"]
+    }
+  ],
+  "closestExternalComparators": [
+    {
+      "service": "Hipflat",
+      "market": "Thailand",
+      "observedOfficialEvidence": "https://www.hipflat.co.th/en and https://www.hipflat.co.th/en/property-for-rent",
+      "comparison": "Large Thailand property inventory, geographic and property-type discovery, and rental listing filters; CondoLink is comparatively a local decision-support tool."
+    },
+    {
+      "service": "Airbnb",
+      "market": "global lodging marketplace",
+      "observedOfficialEvidence": "https://www.airbnb.com/help/article/241",
+      "comparison": "Useful only as an adjacent trust-and-safety reference: reviews, listing accuracy, secure messaging, and on-platform payments are mature marketplace practices that CondoLink does not claim to provide."
+    }
+  ],
+  "nonComparableClaims": [
+    "CondoLink is not evidenced as a full marketplace.",
+    "No evidence supports equivalence to a booking, payment, contract, or regulated property-management platform."
+  ]
+}
